@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../../shared/widgets/buttons/primary_button.dart';
-import '../../../../shared/widgets/buttons/social_button.dart';
-import '../../../../core/theme/app_spacing.dart';
+import '../../../../../shared/widgets/buttons/primary_button.dart';
+import '../../../../../shared/widgets/buttons/social_button.dart';
+import '../../../../../core/theme/app_spacing.dart';
 
 class HeroButtons extends StatelessWidget {
   final VoidCallback onResumeTap;

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:portfolio/core/theme/app_colors.dart';
 import 'package:portfolio/core/theme/app_radius.dart';
-import 'package:portfolio/features/home/widgets/hero/hero_constants.dart';
+import 'package:portfolio/features/home/sections/hero/widgets/hero_constants.dart';
 
 class HeroBackground extends StatelessWidget {
   final double width;

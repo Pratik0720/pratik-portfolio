@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:portfolio/core/theme/app_colors.dart';
 import 'package:portfolio/core/theme/app_text_styles.dart';
-import 'package:portfolio/features/home/widgets/hero/hero_background.dart';
-import 'package:portfolio/features/home/widgets/hero/hero_constants.dart';
-import 'package:portfolio/features/home/widgets/hero/hero_floating_card.dart';
-import 'package:portfolio/features/home/widgets/hero/hero_image.dart';
+import 'package:portfolio/features/home/sections/hero/widgets/hero_background.dart';
+import 'package:portfolio/features/home/sections/hero/widgets/hero_constants.dart';
+import 'package:portfolio/features/home/sections/hero/widgets/hero_floating_card.dart';
+import 'package:portfolio/features/home/sections/hero/widgets/hero_image.dart';
 
 class HeroAvatar extends StatelessWidget {
   const HeroAvatar({super.key});

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import '../widgets/navbar/navbar.dart';
-import '../sections/home_section.dart';
+import '../sections/hero/home_section.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

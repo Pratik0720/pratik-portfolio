@@ -40,8 +40,11 @@ class _SocialButtonState extends State<SocialButton> {
         color: Colors.transparent,
         child: InkWell(
           onTap: widget.onTap,
+          child: AnimatedScale(
+          scale: _isHovered ? 1.05 : 1, 
+          duration: const Duration(milliseconds: 180),
           child: AnimatedContainer(
-            duration: const Duration(milliseconds: 200),
+          duration: const Duration(milliseconds: 180),
             padding: const EdgeInsets.symmetric(vertical: AppSpacing.sm, horizontal: AppSpacing.md),
             decoration: BoxDecoration(
             color: _isHovered
@@ -73,6 +76,8 @@ class _SocialButtonState extends State<SocialButton> {
             ],
           ),
           ),
+        
+        )
         ),
       ),  
     );

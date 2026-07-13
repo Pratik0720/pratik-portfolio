@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../../shared/widgets/page_container.dart';
-import '../../../core/theme/app_size.dart';
-import '../widgets/hero/hero_text.dart';
-import '../widgets/hero/hero_avatar.dart';
+import '../../../../shared/widgets/page_container.dart';
+import '../../../../core/theme/app_size.dart';
+import 'widgets/hero_text.dart';
+import 'widgets/hero_avatar.dart';
 
 class HeroSection extends StatelessWidget {
   const HeroSection({super.key});
