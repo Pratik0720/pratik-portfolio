@@ -12,9 +12,9 @@ class SocialButton extends StatefulWidget {
 
   const SocialButton({
     super.key,
-    required this.icon,
-    required this.title,
     required this.onTap,
+    required this.title,
+    required this.icon,
   });
 
   @override
@@ -24,14 +24,19 @@ class SocialButton extends StatefulWidget {
 class _SocialButtonState extends State<SocialButton> {
 
   bool _isHovered = false;
+  
 
   @override
   Widget build(BuildContext context) {
+    final foregroundColor = _isHovered ? Colors.white : AppColors.textPrimary;
+
+    
     return MouseRegion(
       onEnter: (_) => setState(()=> _isHovered = true),
       onExit: (_) => setState(() => _isHovered = false),
       cursor: SystemMouseCursors.click,
       child: Material(
+        borderRadius: BorderRadius.circular(AppRadius.lg),
         color: Colors.transparent,
         child: InkWell(
           onTap: widget.onTap,
@@ -48,16 +53,21 @@ class _SocialButtonState extends State<SocialButton> {
           child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              Icon(widget.icon),
+              
+              Icon(
+                widget.icon,
+                color: foregroundColor,
+              ),
 
-              SizedBox(width: AppSpacing.xs,),
+              const SizedBox(width: AppSpacing.xs,),
 
               Text(
                 widget.title,
                 style: AppTextStyle.body.copyWith(
                   fontWeight: _isHovered 
                   ? FontWeight.w700
-                  : FontWeight.w400
+                  : FontWeight.w400,
+                  color: foregroundColor
                 ),
               )
             ],

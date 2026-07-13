@@ -33,8 +33,11 @@ class _PrimaryButtonState extends State<PrimaryButton> {
         color: Colors.transparent,
         child: InkWell(
         onTap: widget.onTap,
-        child: AnimatedContainer(
-          duration: const Duration(milliseconds: 200),
+        child: AnimatedScale(
+          scale: _isHovered ? 1.05 : 1, 
+          duration: const Duration(milliseconds: 180),
+          child: AnimatedContainer(
+          duration: const Duration(milliseconds: 180),
           padding: const EdgeInsets.symmetric(vertical: AppSpacing.sm, horizontal: AppSpacing.md),
 
           decoration: BoxDecoration(
@@ -69,6 +72,7 @@ class _PrimaryButtonState extends State<PrimaryButton> {
             ],
           ),
         ),
+        )
       ),
       )
     );
