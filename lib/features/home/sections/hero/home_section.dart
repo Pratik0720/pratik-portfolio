@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/features/home/pages/home_controller.dart';
 import '../../../../shared/widgets/page_container.dart';
 import '../../../../core/theme/app_size.dart';
 import 'widgets/hero_text.dart';
@@ -14,6 +15,7 @@ class HeroSection extends StatelessWidget {
 
     return PageContainer(
       child: SizedBox(
+        key: HomeController.heroKey,
         height: height - AppSize.navbarHeight,
         child: Row(
           children: [
